@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Student Feedback System</title>
+<link rel="stylesheet" href="css/register.css">
+<script src="js/script.js"></script>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1 class="site-title">Student Feedback System</h1>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="About.html">About</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="form-section">
+    <div class="form-container">
+        <h2>Create Account</h2>
+        <p>Register to start submitting feedback</p>
+
+        <form onsubmit="return validateRegisterForm()">
+            <label>Name</label>
+            <input type="text" id="name" placeholder="Enter your name">
+
+            <label>Email</label>
+            <input type="email" id="email" placeholder="Enter your email">
+
+            <label>Password</label>
+            <input type="password" id="password" placeholder="Enter password">
+
+            <button onclick="window.location.href='login.html'">Register</button>
+
+            <p class="form-note">
+                Already have an account? <a href="login.html">Login</a>
+            </p>
+        </form>
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2026 Yanbu Industrial College - CS381 Project</p>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Feedback</title>
+   <link rel="stylesheet" href="css/feedback.css">
+<script src="js/script.js"></script>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1 class="site-title">Submit Feedback</h1>
+        <nav>
+            <ul class="nav-list">
+                 <li><a href="index.html">Home</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="About.html">About</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="form-section">
+    <div class="form-container">
+        <h2>Submit Feedback</h2>
+        <p>Help us improve by sharing your experience</p>
+
+        <form onsubmit="return validateFeedbackForm()">
+            <label>Title</label>
+            <input type="text" id="title" placeholder="Feedback title">
+
+            <label>Category</label>
+            <select id="category">
+                <option value="">Select Category</option>
+                <option>Course</option>
+                <option>Instructor</option>
+                <option>Grading</option>
+                <option>Exams</option>
+                <option>Logistics</option>
+                <option>Additional</option>
+                <option>Suggestion</option>
+
+            </select>
+
+            <label>Description</label>
+            <textarea id="description" placeholder="Write your feedback here..." rows="5"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2026 Yanbu Industrial College - CS381 Project</p>
+    </div>
+</footer>
+
+</body>
+</html>
